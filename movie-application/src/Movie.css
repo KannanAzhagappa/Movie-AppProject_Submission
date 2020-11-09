@@ -1,0 +1,119 @@
+ .movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .title-container {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      
+  }
+
+  .title-container>h2 {
+    margin-left: 20px;
+    color: white;
+    justify-content: flex-start;
+  }
+  
+  .title-container>header {
+    margin-right: 20px;
+    justify-content: flex-end;
+  }
+
+ .movie {
+    background-color: grey;
+    position: relative;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 300px;
+    transition: transform 450ms;
+  }
+
+  .movie:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie img {
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+  }
+  
+  .movie-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .movie-info h3 {
+    margin: 0;
+  }
+  
+  .movie-over {
+    background-color: #fff;
+    color: #22254b;
+    position: absolute;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    overflow: auto;
+    max-height: 100%;
+    transform: translateY(102%);
+    transition: transform 450ms ease-in-out;
+    font-size: 15px;
+  }
+  
+  .movie-over h2 {
+    font-weight: bold;
+  }
+  
+  .movie:hover .movie-over {
+    transform: translateY(0%);
+  }
+  
+  .tag {
+    background-color: rgb(6, 10, 6);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  .tag.green {
+    color: rgb(61, 245, 61);
+  }
+  
+  .tag.orange {
+    color: rgb(236, 173, 38);
+  }
+  
+  .tag.red {
+    color: rgba(243, 70, 70, 0.815);
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .search {
+    background-color: transparent;
+    border: 2px solid #373b69;
+    border-radius: 50px;
+    color: white;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .search:focus {
+    outline: 0;
+  }
